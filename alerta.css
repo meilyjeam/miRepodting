@@ -1,0 +1,22 @@
+body{
+	background-color: #ccffdd;
+}
+
+button{
+	background-color: #1d9cf2;
+	color: #fff;
+	padding: 0.5rem 1rem;
+	font-family: corbel;
+	border-width:thin;
+	border-radius: 5px 5px 5px 5px;
+	margin: 5px;
+}
+form{
+  margin: auto;
+  padding: 2rem 35rem;
+  border: 1px ;
+  text-align: center;
+
+  font-family: verdana;
+    font-size: 20px;
+}

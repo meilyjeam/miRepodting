@@ -1,0 +1,36 @@
+body{
+	 background-color: #AED6F1;
+}
+.aspecto {
+	margin:50px 100px;
+	border: 1px solid #000;
+	background-image: url(file:///C:/Users/Administrador/Desktop/reporting/fondo.png); 
+}
+.boton_personalizado{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #1883ba;
+    border-radius: 6px;
+    border: 2px solid #0016b0;
+    margin: 15px;
+
+  }
+  .rp{
+  	margin: 5px 500px;
+  	font-size: 40px;
+  }
+  .como{
+  	margin:55px 500px;
+  }
+  img{ 
+    margin: 50px 220px;
+  }
+  a{
+    background-color: #fff;
+    border-radius: 6px;
+    border: 2px solid #0016b0
+   
+  }

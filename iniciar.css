@@ -1,0 +1,18 @@
+.wrapper {
+	width: 400px;
+	height: 500px; 
+	margin: 50px 500px;
+	box-shadow: 20px 21px 1px 0px rgba(51, 102, 255);
+    box-shadow: 20px 21px 1px 0px rgba(51, 102, 255);
+   box-shadow: 20px 21px 1px 0px rgba(51, 102, 255);
+   background-color: #AED6F1;
+}
+.login {
+	margin:120px 50px; 
+}
+button {
+	background-color: #7FB3D5;
+}
+
+
+
