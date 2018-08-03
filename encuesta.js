@@ -1,63 +1,20 @@
-$('#ecu')
-function guardaDatos(user){
-    var usuario = {
-        uid:user.udi,
-        nombre:user.displayName,
-        email:user.email
-    }
-    fireba
-}
+function writeEncuestaData(asiste, name) {
+    firebase.database("chat").ref("/encuesta/").push({
+        siste: asiste,
+        neme: name,
+    }, function(error){
+        if (error){
+            console.log("error");
+        } else{
+            console.log("datos guardados")
+         }
 
-
-
-
-
-
-
-
-
-
-
-
-function() {
-'use strict';
-
-var form = document.getElementById('questions');
-
-form.onsubmit = function(e) {
-    e.preventDefault();
-
-    var data = getData();
-
-    var dataRef = new Firebase('https://chat-c2c6d.firebaseio.com/');
-
-    dataRef.push(data, function() {
-        window.alert('Form submitted');
+         var('#ecu').on(
+        'click',
+        function(e){
+            console.log('aaaa')
+            e.preventDefault();
+            var nombre = $('.nombre').val();
+            var asiste = $(".asiste").val();
     });
-};
-
-function getData() {
-    var data = {};
-
-    var inputs = form.querySelectorAll('input, textarea');
-
-    for (var i=0; i<inputs.length; i++) {
-        var el = inputs[i];
-
-        switch (el.type) {
-            case 'radio':
-                if (el.checked) data[el.name] = el.value;
-
-                break;
-            case 'text':
-            default:
-               
-                data[el.name] = el.value;
-                break;
-        }
-    }
-
-    return data;
 }
-
-})();

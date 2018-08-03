@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Questionnaire</title>
+    <title>Encuesta</title>
       <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.firebase.com/js/client/2.4.1/firebase.js"></script>
   </head>
@@ -10,9 +10,9 @@
       <h2>Encuesta</h2>
       <form id="questions" class="form-horizontal">
         <div class="form-group">
-          <label for="jsKnowledge">Vas a asistir al evento programado</label>
+          <label for="jsKnowledge" id="asiste">Vas a asistir al evento programado</label>
           <div class="radio">
-            <label>
+             <label>
               <input type="radio" name="jsKnowledge" id="jsKnowledge1" value="good" checked>
               si
             </label>
@@ -30,7 +30,7 @@
             </label>
           <div>
             <label for="nombre">Nombre Completo</label><br>
-            <input type="text" name="nombre" placeholder="Nombre" required><br>
+            <input type="text" name="nombre" placeholder="Nombre" required id="nombre"><br>
           </div>
           </div>
         </div>
