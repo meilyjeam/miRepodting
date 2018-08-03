@@ -1,20 +1,14 @@
-function writeEncuestaData(asiste, name) {
-    firebase.database("chat").ref("/encuesta/").push({
-        siste: asiste,
-        neme: name,
+
+function writeEncuentaData(asiste, name) {
+    firebase.database().ref("/encuesta/").push({
+        asiste: asiste,
+        name: name,
     }, function(error){
-        if (error){
+        if (error){            
             console.log("error");
         } else{
             console.log("datos guardados")
          }
-
-         var('#ecu').on(
-        'click',
-        function(e){
-            console.log('aaaa')
-            e.preventDefault();
-            var nombre = $('.nombre').val();
-            var asiste = $(".asiste").val();
+        }
     });
 }
