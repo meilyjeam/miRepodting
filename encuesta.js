@@ -1,14 +1,25 @@
+jQuery(document).ready(function($){
+ $('#enviar').click(
+     'submit',
+     function(e){
+         e.preventDefault();
 
-function writeEncuentaData(asiste, name) {
-    firebase.database().ref("/encuesta/").push({
-        asiste: asiste,
-        name: name,
-    }, function(error){
-        if (error){            
-            console.log("error");
-        } else{
-            console.log("datos guardados")
+         var  nombre = $('#encuesta #nombre').val(); 
+         else {
+            database.ref('/relato/').push(nombre);
+            location.href="reporting.html";
+             alert(nombre);
          }
-        }
-    });
-}
+
+         if ($('#bt_si')[0].checked==true){
+            database.ref('/relato/').push("Si",object('#bt_si','#nombre'));
+         }else if ($('#bt_no')[0].checked==true){
+            database.ref('/relato/').push("No",object('#bt_no','#nombre'));
+         }else if ($('#bt_mas')[0].checked==true){
+            database.ref('/relato/').push("Talvez",object('#mas','#nombre'));
+         }else
+         alert('debes seleccionar una repuesta');
+
+
+     });
+});

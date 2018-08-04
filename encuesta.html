@@ -24,18 +24,18 @@
           </div>
           <div class="radio disabled">
             <label>
-              <input type="radio" name="opcion" id="mas" value="none">
+              <input type="radio" name="opcion" id="mas">
               No lo se mándame más información
             </label>
           <div>
           <br>
             <label for="nombre">Nombre Completo</label><br>
-            <input type="text" name="nombre" placeholder="Nombre" required id="nombre"><br>
+            <input type="text" name="nombre" placeholder="Nombre" required id="nombre" required><br>
           </div>
           </div>
         </div>
         <div class="form-group">
-          <button onclick="writeEncuestaData()" type="submit" class="btn btn-primary btn-lg" id="enviar">enviar</button>
+          <button type="submit" class="btn btn-primary btn-lg" id="enviar">enviar</button>
         </div>
       </form>
     </div>
@@ -60,6 +60,7 @@
       messagingSenderId: "940091870279"
     };
     firebase.initializeApp(config);
+    const database = firebase.database();
   </script>
     <script src="encuesta.js"></script>
   </body>
