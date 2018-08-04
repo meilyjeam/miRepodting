@@ -4,7 +4,7 @@ body{
 .aspecto {
 	margin:50px 100px;
 	border: 1px solid #000;
-	background-image: url(file:///C:/Users/Administrador/Desktop/reporting/fondo.png); 
+	background-image: url(fondo.png);
 }
 .boton_personalizado{
     text-decoration: none;
